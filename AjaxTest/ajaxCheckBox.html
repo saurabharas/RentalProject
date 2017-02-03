@@ -1,0 +1,48 @@
+<html>
+
+<body>
+
+
+<form  >
+    Do you need id or name access?
+    <input id="c1" type="checkbox" name="formID" value="ID"  onchange="showUser() " />
+    <input id="c2" type="checkbox" name="formName" value="Name"  onchange="showUser() " />
+	 <button type="button" onclick="showUser()">Change Content</button>
+</form>
+<div id="txtHint"><b>Person info will be listed here...</b></div>
+
+
+<!--
+<form>
+<select name="users" onchange="showUser(this.value)">
+  <option value="">Select a person:</option>
+  <option value="1">Peter Griffin</option>
+  <option value="2">Lois Griffin</option>
+  <option value="3">Joseph Swanson</option>
+  <option value="4">Glenn Quagmire</option>
+  </select>
+</form>
+<br>
+<div id="txtHint"><b>Person info will be listed here...</b></div>
+
+-->
+
+<script>
+function showUser() {
+   var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("txtHint").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajaxDB.php", true);
+  xhttp.send();
+}
+</script>
+
+
+
+
+</body>
+</html>
