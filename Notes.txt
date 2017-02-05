@@ -12,3 +12,8 @@ Things to be put on website:
 5.Rating of provider(optional,popup)
 6.deals by the provider(pop-up)
 7.chat with a provider section then opens a chat box down.
+
+
+Filters to be added:
+1.Deposit
+2.Bike hourly/daily/monthly 
