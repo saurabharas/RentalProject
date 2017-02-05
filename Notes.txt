@@ -1,0 +1,5 @@
+1. x services dont provide(red text with hover)
+2. Bike colour section
+3. Ratings and deal section the provider provides.
+4. Slider down to show all the bikes 
+5. photo slider section
