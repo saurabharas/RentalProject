@@ -17,3 +17,14 @@ Things to be put on website:
 Filters to be added:
 1.Deposit
 2.Bike hourly/daily/monthly 
+
+
+
+Things to be completed:
+1.Fetch data from each website
+2.Write scripts to calculate the amount
+3.store the data into db
+4.Design the website to be SEO friendly
+5.Fetch data from ajax websites
+6.Start looking on how to create APIs to suuport websites in future
+ 
