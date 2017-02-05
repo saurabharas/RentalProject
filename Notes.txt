@@ -3,3 +3,12 @@
 3. Ratings and deal section the provider provides.
 4. Slider down to show all the bikes 
 5. photo slider section
+
+Things to be put on website:
+1.photo of bike with slider
+2.Name of the bike 
+3.Top 3 providers with lowest price along with the deposit price on the side.
+4.Policies of the providers
+5.Rating of provider(optional,popup)
+6.deals by the provider(pop-up)
+7.chat with a provider section then opens a chat box down.
