@@ -1,0 +1,30 @@
+1. x services dont provide(red text with hover)
+2. Bike colour section
+3. Ratings and deal section the provider provides.
+4. Slider down to show all the bikes 
+5. photo slider section
+
+Things to be put on website:
+1.photo of bike with slider
+2.Name of the bike 
+3.Top 3 providers with lowest price along with the deposit price on the side.
+4.Policies of the providers
+5.Rating of provider(optional,popup)
+6.deals by the provider(pop-up)
+7.chat with a provider section then opens a chat box down.
+
+
+Filters to be added:
+1.Deposit
+2.Bike hourly/daily/monthly 
+
+
+
+Things to be completed:
+1.Fetch data from each website
+2.Write scripts to calculate the amount
+3.store the data into db
+4.Design the website to be SEO friendly
+5.Fetch data from ajax websites
+6.Start looking on how to create APIs to suuport websites in future
+ 
