@@ -1,0 +1,28 @@
+phantom-
+1.rentsetgo:
+2.snapbike:
+3.renttrip:34
+4.rentone:31
+5.rentongo:NOT WORKING(AJAX CONETENT)
+6.WheelStreet:26
+7.www.wickedride.com:21
+8.ziphop:13
+9.royalbrothers:NOT WORKING(AJAX CONETENT)
+10.MetroBikes:10
+11.dryve:16
+12.RoadPanda:To be Seen
+13.BykeMania:17
+chrome-
+1.rentsetgo
+2.snapbike
+3.renttrip:45
+4.rentone:57
+5.rentongo:NOT WORKING(AJAX CONETENT)
+6.WheelStreet:11
+7.www.wickedride.com:15
+8.ziphop:13(Working correctly when sleep of 5 is put)
+9.royalbrothers:NOT WORKING(AJAX CONETENT)
+10.MetroBikes:10
+11.dryve:15
+12.RoadPanda:To be Seen
+13.BykeMania:22(Apply time out for fully loading)
