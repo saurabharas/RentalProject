@@ -57,13 +57,23 @@ browser1.find_element_by_id("ctl00_ContentPlaceHolder1_CEPickup_day_1_4").click(
 browser1.find_element_by_xpath(".//*[@id='ctl00_ContentPlaceHolder1_btnSearchChange']").click()
 browser1.find_element_by_id("ctl00_ContentPlaceHolder1_CEPickup_day_1_5").click()
 '''
+
+'''
 #i=datetime.datetime.now()
 #i.strftime('%d/%m/%Y')
 
 
 N = 2
 
-date_N_days_ago = datetime.now() + timedelta(days=10)
-
+#date_N_days_ago = datetime.now() + timedelta(days=N)
+dateReq = datetime.now() + timedelta(days=2)
+    
 print datetime.now()
 print date_N_days_ago.strftime('%d-%m-%Y')
+'''
+a=u'Rs. 400.00'.decode('utf-8')
+st=a.encode('ascii', 'xmlcharrefreplace')
+print(isinstance("hhjdashjsa", basestring))
+print(isinstance(a, basestring))
+
+

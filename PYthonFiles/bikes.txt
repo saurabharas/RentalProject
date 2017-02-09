@@ -1,9 +1,9 @@
 phantom-
 1.rentsetgo:
 2.snapbike:
-3.renttrip:34
-4.rentone:31
-5.rentongo:NOT WORKING(AJAX CONETENT)
+3.rentrip:34
+4.rentone:31(No bikes only cycles)
+5.rentongo:NOT WORKING(AJAX CONETENT)(Terms and condition dowsnot allow scrapers)
 6.WheelStreet:26
 7.www.wickedride.com:21
 8.ziphop:13
