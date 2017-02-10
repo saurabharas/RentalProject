@@ -71,9 +71,28 @@ dateReq = datetime.now() + timedelta(days=2)
 print datetime.now()
 print date_N_days_ago.strftime('%d-%m-%Y')
 '''
+'''
 a=u'Rs. 400.00'.decode('utf-8')
 st=a.encode('ascii', 'xmlcharrefreplace')
 print(isinstance("hhjdashjsa", basestring))
-print(isinstance(a, basestring))
+print(a)
+'''
+'''
+presentWeekVal=3
+while(True):
+    for y in range(1,5):
+        for x in range(1,8):
+            if()
+            print(x,y)
+            time.sleep(1)
+            xpath="html/body/div[8]/div[1]/div[2]/table/tbody/tr[2]/td[6]/div"
+'''
+print(datetime.now().strftime("%A"))
+
+
+
+
+
+
 
 

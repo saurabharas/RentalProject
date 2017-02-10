@@ -1,7 +1,7 @@
 phantom-
 1.rentsetgo:
-2.snapbike:
-3.rentrip:34
+2.snapbike:(Done)
+3.rentrip:34(Done)
 4.rentone:31(No bikes only cycles)
 5.rentongo:NOT WORKING(AJAX CONETENT)(Terms and condition dowsnot allow scrapers)
 6.WheelStreet:26
