@@ -103,34 +103,102 @@ def datePickerXpath():
         y=1
     xpath="html/body/div[8]/div[1]/div[2]/table/tbody/tr[%d]/td[%d]/div"%(x,y)
     return (x,y)
-    
-      
+def dayDuration():
+        dateVal=0
+        dayCount=0
+        if(datetime.now().isoweekday() and int(datetime.now().strftime('%H'))==range(1,17)):
+                dateVal=0
+                dayCount=0
+        elif(datetime.now().isoweekday() and int(datetime.now().strftime('%H'))!=range(1,17)):
+                dateVal=1
+                dayCount=0
+        elif(not datetime.now().isoweekday() and int(datetime.now().strftime('%H'))==range(1,11)):
+                dateVal=0
+                dayCount=1
+        elif(not datetime.now().isoweekday() and int(datetime.now().strftime('%H'))!=range(1,11)):
+                dateVal=1
+                dayCount=1
+        return dateVal,dayCount        
+class varStatic:
+        startVal=int(datetime.now().strftime('%d'))
+        endVal=startVal+1
+        timeIn=0
+        daysCount=0
+        timeOut=0
 
 def ajaxContainer(url,city,count):
     browser1.get(url)
     #findValues(browser1)
-    dateVal=0
-    if(datetime.now().isoweekday() and datetime.now().strftime('%H')==range(1,17)):
-        dateVal=0
-    elif(datetime.now().isoweekday() and datetime.now().strftime('%H')!=range(1,17)):
-        dateVal=1
-    elif(not datetime.now().isoweekday() and datetime.now().strftime('%H')==range(1,11)):
-        dateVal=0
-    elif(not datetime.now().isoweekday() and datetime.now().strftime('%H')!=range(1,11)):
-        dateVal=1
     
+    dateVal,dayCount=dayDuration()
+    if(int(datetime.now().strftime('%H'))<6 or int(datetime.now().strftime('%H'))>16):
+        varStatic.timeIn=9
+        if(varStatic.timeOut==0):
+            varStatic.timeOut=9
+        print("1")
+    
+    if(dateVal==0):
+        print("2")
+        if(dayCount==0):
+            varStatic.timeIn=int(datetime.now().strftime('%H'))+4
+            if(varStatic.timeOut==0):
+                varStatic.timeOut=varStatic.timeIn
+            print("3")
+        else:
+            varStatic.timeIn=int(datetime.now().strftime('%H'))+10
+            if(varStatic.timeOut==0):
+                varStatic.timeOut=varStatic.timeIn
+            print("4")
+    elif(int(datetime.now().strftime('%H'))>16):
+        varStatic.startVal=int(datetime.now().strftime('%d'))+1    
+        varStatic.endVal=startVal+1
+        varStatic.timeIn=9
+        if(varStatic.timeOut==0):
+            varStatic.timeOut=varStatic.timeIn
+        print("5")
+    if(varStatic.daysCount<6):
+        varStatic.timeOut=varStatic.timeOut+4
+        print("6")
+        if(varStatic.timeOut>17):
+            varStatic.daysCount=varStatic.daysCount+1
+            varStatic.timeOut=9    
+            varStatic.endVal=varStatic.endVal+1
+        print(varStatic.startVal,varStatic.timeIn,varStatic.endVal,varStatic.timeOut)
+        ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date="+str(varStatic.startVal)+"+Feb+2017&start_time="+str(varStatic.timeIn)+"%3A00&end_date="+str(varStatic.endVal)+"+Feb+2017&end_time="+str(varStatic.timeOut)+"%3A00&city_id=1&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","Bangalore",0)
+        print("7")
+            
 
-    startVal=0
-    endVal=4
-    if(dateVal==1):
-        startVal=1    
-        endVal=5
-    print(startVal,endVal)
 
-    for N in range(0,1):
-        x,y=datePickerXpath()
-        print(x,y)
+                    
+                
+
+
+        
+        '''
+        browser1.click("css=span.edit-button")
+        browser1.click("//tr[3]/td[3]/div")
+        browser1.click("//div[4]/div[2]/div/div/div[2]")
+        browser1.click("//div[5]/div/div[2]/table/tbody/tr[3]/td[5]")
+        browser1.click("//div[6]/div[2]/div/div/div[2]")
+        
+        
         browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[4]/span").click()
+        
+        #browser1.find_element_by_xpath("//tr[3]/td[3]/div").click()
+        time.sleep(5)
+        
+        browser1.find_element_by_xpath("html/body/div[3]/div[1]/div[2]/table/tbody/tr[3]/td[6]/div").click()
+        time.sleep(5)
+      
+        browser1.find_element_by_xpath("html/body/div[4]/div[2]/div/div[1]/div[4]").click()
+        time.sleep(5)
+        browser1.find_element_by_xpath("html/body/div[5]/div[1]/div[2]/table/tbody/tr[4]/td[1]/div").click()
+        time.sleep(5)
+        browser1.find_element_by_xpath("html/body/div[6]/div[2]/div/div[1]/div[3]").click()
+
+        #browser1.find_element_by_xpath("//div[5]/div/div[2]/table/tbody/tr[3]/td[5]").click()
+        #browser1.find_element_by_xpath("//div[6]/div[2]/div/div/div[2]").click()
+        
         #ActionChains(browser1).move_to_element(browser1.find_element_by_xpath(".//*[@id='_pick_time']/option[7]")).click().perform()
         #browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[4]/span").click()
         
@@ -148,11 +216,13 @@ def ajaxContainer(url,city,count):
         #time.sleep(3)
         #ActionChains(browser1).move_to_element(browser1.find_element_by_xpath("html/body/div[8]/div[1]/div[2]/table/tbody/tr[2]/td[7]/div")).click().perform()
         #browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[1]/div[2]/input").click()     
-        browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[1]/div[2]/input").click()
-        browser1.find_element_by_xpath("html/body/div[9]/div[2]/div/div[1]/div[1]").click()
-        browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[3]/div[2]/input").click()
-        browser1.find_element_by_xpath("html/body/div[6]/div[2]/div/div[1]/div[2]").click()
-        
+        #browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[1]/div[1]/input").click()
+        #a=[]
+        #a.append(browser1.find_elements_by_xpath("html/body/div[3]/div[1]/div[2]/table/tbody/tr[1]"))
+        #print(a)
+        #browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[1]/div[2]/input").click()
+        #browser1.find_element_by_xpath("html/body/div[4]/div[2]/div/div[1]/div[4]").click()
+        '''
         
 '''
         presentDayVal=6
@@ -360,7 +430,11 @@ def findValues(browser1):
 '''
 	
 browser1=webdriver.Chrome()
-ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date=13+Feb+2017&start_time=09%3A00&end_date=14+Feb+2017&end_time=22%3A00&city_id=1&_token=2OsO0ddkOdnsCY91cxxT8z3bQmJHC5ARvtDeAVZ9","Bangalore",0)
+ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date=13+Feb+2017&start_time=10%3A00&end_date=14+Feb+2017&end_time=12%3A00&city_id=1&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","Bangalore",0)
+#ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date="+str(14)+"+Feb+2017&start_time=10%3A00&end_date="+str(15)+"+Feb+2017&end_time=12%3A00&city_id=1&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","Bangalore",0)
+#ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date=%s+Feb+2017&start_time=10%3A00&end_date=%s+Feb+2017&end_time=12%3A00&city_id=1&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw"%('15','16'),"Bangalore",0)
+#ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date=%s+Feb+2017&start_time=10%3A00&end_date=%s+Feb+2017&end_time=12%3A00&city_id=1&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw"%('17','18'),"Bangalorse",0)
+
 '''
 ajaxContainer("https://www.rentrip.in/rent-bike/Bangalore","Bangalore",1)
 ajaxContainer("https://www.rentrip.in/rent-bike/Indore","Indore",2)
