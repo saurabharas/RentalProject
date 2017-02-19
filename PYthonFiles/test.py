@@ -1,3 +1,6 @@
+import time
+from datetime import datetime, timedelta
+'''
 import sys
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
@@ -16,9 +19,9 @@ class Render(QWebPage):
    # self.frame = self.mainFrame()
     self.app.quit()
 
+'''
 
-
-
+'''
 url = 'http://pycoders.com/archive/'
 r = Render("https://www.rentomojo.com/bangalore/bikes-on-rent")
 #html = r.frame.totml()
@@ -35,3 +38,18 @@ print(test[0])
 #for i in range(30):
 #  print("\n \n ")
 # print(test[i])
+'''
+a=u'RS 6912'
+a.encode("UTF-8")
+newstr = a.replace("RS ", "")
+print(datetime.now().weekday()==6)
+print(datetime.now()+timedelta(days=6))
+
+
+
+
+
+
+
+
+

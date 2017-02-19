@@ -6,7 +6,7 @@ phantom-
 5.rentongo:NOT WORKING(AJAX CONETENT)(Terms and condition dowsnot allow scrapers)
 6.WheelStreet:26
 7.www.wickedride.com:21
-8.ziphop:13
+8.ziphop:13(Blocking the IP)
 9.royalbrothers:NOT WORKING(AJAX CONETENT)
 10.MetroBikes:10
 11.dryve:16
