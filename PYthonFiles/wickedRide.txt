@@ -1,0 +1,232 @@
+
+Bangalore FromDate= 14 - ToDate= 15 Time Duration: 0 TimeOut 9
+Himalayan,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Himalayan.png,RS 91,RS 1441
+Versys 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Versys-650.png,RS 310,RS 8060
+TNT 600 GT,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600-GT.png,RS 288,RS 4579
+Mojo,//wickedride.com/img/bikes_upload/thumbnail/Mahindra-Mojo.png,RS 69,RS 1081
+Desert Storm - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Desert-Storm---500.png,RS 69,RS 1081
+Bullet 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-350.png,RS 55,RS 869
+Thunderbird - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---350.png,RS 55,RS 869
+Bullet Electra - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-Electra---350.png,RS 55,RS 869
+Avenger,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Avenger.png,RS 44,RS 699
+Duke 200,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-200.png,RS 67,RS 1060
+Classic - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Classic---350.png,RS 55,RS 869
+Iron 883,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Iron-883.png,RS 229,RS 5954
+Tiger 800 XR,//wickedride.com/img/bikes_upload/thumbnail/Triumph-Tiger-800-XR.png,RS 343,RS 8918
+Scrambler,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Scrambler.png,RS 316,RS 5024
+Ninja 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-650.png,RS 229,RS 3625
+Monster 821,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Monster-821.png,RS 451,RS 10290
+Hyperstrada,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Hyperstrada.png,RS 495,RS 8742
+Forty Eight,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Forty-Eight.png,RS 297,RS 7722
+Street 750,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Street-750.png,RS 178,RS 2819
+TNT 600i,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600i.png,RS 288,RS 7488
+Thunderbird - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---500.png,RS 69,RS 1081
+Ninja ER-6n,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-ER-6n.png,RS 288,RS 7488
+TNT 300,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-300.png,RS 138,RS 2183
+Z 250,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Z-250.png,RS 108,RS 1717
+Dominar,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Dominar.png,RS 106,RS 2210
+Duke 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-390.png,RS 83,RS 1314
+RC 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-RC-390.png,RS 106,RS 1674
+
+Bangalore FromDate= 14 - ToDate= 15 Time Duration: 4 TimeOut 13
+Classic - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Classic---350.png,RS 55,RS 951
+Himalayan,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Himalayan.png,RS 91,RS 1577
+Iron 883,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Iron-883.png,RS 229,RS 6412
+Monster 821,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Monster-821.png,RS 451,RS 11080
+TNT 600 GT,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600-GT.png,RS 288,RS 5011
+Mojo,//wickedride.com/img/bikes_upload/thumbnail/Mahindra-Mojo.png,RS 69,RS 1183
+Desert Storm - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Desert-Storm---500.png,RS 69,RS 1183
+Bullet 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-350.png,RS 55,RS 951
+Thunderbird - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---350.png,RS 55,RS 951
+Bullet Electra - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-Electra---350.png,RS 55,RS 951
+Avenger,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Avenger.png,RS 44,RS 765
+TNT 300,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-300.png,RS 138,RS 2389
+Z 250,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Z-250.png,RS 108,RS 1879
+Duke 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-390.png,RS 83,RS 1438
+Duke 200,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-200.png,RS 67,RS 1160
+RC 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-RC-390.png,RS 106,RS 1832
+Tiger 800 XR,//wickedride.com/img/bikes_upload/thumbnail/Triumph-Tiger-800-XR.png,RS 343,RS 9604
+Scrambler,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Scrambler.png,RS 316,RS 5498
+Versys 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Versys-650.png,RS 310,RS 8680
+Ninja 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-650.png,RS 229,RS 3967
+Hyperstrada,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Hyperstrada.png,RS 495,RS 9484
+Forty Eight,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Forty-Eight.png,RS 297,RS 8316
+Street 750,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Street-750.png,RS 178,RS 3085
+TNT 600i,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600i.png,RS 288,RS 8064
+Thunderbird - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---500.png,RS 69,RS 1183
+Ninja ER-6n,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-ER-6n.png,RS 288,RS 8064
+Dominar,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Dominar.png,RS 106,RS 2380
+
+Bangalore FromDate= 14 - ToDate= 15 Time Duration: 8 TimeOut 17
+Classic - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Classic---350.png,RS 55,RS 1115
+Himalayan,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Himalayan.png,RS 91,RS 1849
+Iron 883,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Iron-883.png,RS 229,RS 7328
+Monster 821,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Monster-821.png,RS 451,RS 12660
+TNT 600 GT,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600-GT.png,RS 288,RS 5875
+Mojo,//wickedride.com/img/bikes_upload/thumbnail/Mahindra-Mojo.png,RS 69,RS 1387
+Desert Storm - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Desert-Storm---500.png,RS 69,RS 1387
+Bullet 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-350.png,RS 55,RS 1115
+Thunderbird - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---350.png,RS 55,RS 1115
+Bullet Electra - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-Electra---350.png,RS 55,RS 1115
+Avenger,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Avenger.png,RS 44,RS 897
+TNT 300,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-300.png,RS 138,RS 2801
+Z 250,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Z-250.png,RS 108,RS 2203
+Duke 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-390.png,RS 83,RS 1686
+Duke 200,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-200.png,RS 67,RS 1360
+RC 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-RC-390.png,RS 106,RS 2148
+Tiger 800 XR,//wickedride.com/img/bikes_upload/thumbnail/Triumph-Tiger-800-XR.png,RS 343,RS 10976
+Scrambler,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Scrambler.png,RS 316,RS 6446
+Versys 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Versys-650.png,RS 310,RS 9920
+Ninja 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-650.png,RS 229,RS 4651
+Hyperstrada,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Hyperstrada.png,RS 495,RS 10968
+Forty Eight,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Forty-Eight.png,RS 297,RS 9504
+Street 750,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Street-750.png,RS 178,RS 3617
+TNT 600i,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600i.png,RS 288,RS 9216
+Thunderbird - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---500.png,RS 69,RS 1387
+Ninja ER-6n,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-ER-6n.png,RS 288,RS 9216
+Dominar,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Dominar.png,RS 106,RS 2720
+
+Bangalore FromDate= 14 - ToDate= 15 Time Duration: 12 TimeOut 9
+Classic - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Classic---350.png,RS 55,RS 1574
+Himalayan,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Himalayan.png,RS 91,RS 2610
+Iron 883,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Iron-883.png,RS 229,RS 10992
+Monster 821,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Monster-821.png,RS 451,RS 19000
+TNT 600 GT,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600-GT.png,RS 288,RS 8294
+Mojo,//wickedride.com/img/bikes_upload/thumbnail/Mahindra-Mojo.png,RS 69,RS 1958
+Desert Storm - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Desert-Storm---500.png,RS 69,RS 1958
+Bullet 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-350.png,RS 55,RS 1574
+Thunderbird - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---350.png,RS 55,RS 1574
+Bullet Electra - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-Electra---350.png,RS 55,RS 1574
+Avenger,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Avenger.png,RS 44,RS 1266
+TNT 300,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-300.png,RS 138,RS 3954
+Z 250,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Z-250.png,RS 108,RS 3110
+Duke 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-390.png,RS 83,RS 2380
+Duke 200,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-200.png,RS 67,RS 1920
+RC 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-RC-390.png,RS 106,RS 3032
+Tiger 800 XR,//wickedride.com/img/bikes_upload/thumbnail/Triumph-Tiger-800-XR.png,RS 343,RS 16464
+Scrambler,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Scrambler.png,RS 316,RS 9100
+Versys 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Versys-650.png,RS 310,RS 14880
+Ninja 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-650.png,RS 229,RS 6566
+Hyperstrada,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Hyperstrada.png,RS 495,RS 16000
+Forty Eight,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Forty-Eight.png,RS 297,RS 14256
+Street 750,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Street-750.png,RS 178,RS 5106
+TNT 600i,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600i.png,RS 288,RS 13824
+Thunderbird - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---500.png,RS 69,RS 1958
+Ninja ER-6n,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-ER-6n.png,RS 288,RS 13824
+Dominar,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Dominar.png,RS 106,RS 4080
+
+Bangalore FromDate= 14 - ToDate= 15 Time Duration: 16 TimeOut 13
+Classic - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Classic---350.png,RS 55,RS 951
+Himalayan,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Himalayan.png,RS 91,RS 1577
+Iron 883,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Iron-883.png,RS 229,RS 6412
+Monster 821,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Monster-821.png,RS 451,RS 11080
+TNT 600 GT,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600-GT.png,RS 288,RS 5011
+Mojo,//wickedride.com/img/bikes_upload/thumbnail/Mahindra-Mojo.png,RS 69,RS 1183
+Desert Storm - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Desert-Storm---500.png,RS 69,RS 1183
+Bullet 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-350.png,RS 55,RS 951
+Thunderbird - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---350.png,RS 55,RS 951
+Bullet Electra - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-Electra---350.png,RS 55,RS 951
+Avenger,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Avenger.png,RS 44,RS 765
+TNT 300,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-300.png,RS 138,RS 2389
+Z 250,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Z-250.png,RS 108,RS 1879
+Duke 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-390.png,RS 83,RS 1438
+Duke 200,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-200.png,RS 67,RS 1160
+RC 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-RC-390.png,RS 106,RS 1832
+Tiger 800 XR,//wickedride.com/img/bikes_upload/thumbnail/Triumph-Tiger-800-XR.png,RS 343,RS 9604
+Scrambler,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Scrambler.png,RS 316,RS 5498
+Versys 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Versys-650.png,RS 310,RS 8680
+Ninja 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-650.png,RS 229,RS 3967
+Hyperstrada,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Hyperstrada.png,RS 495,RS 9484
+Forty Eight,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Forty-Eight.png,RS 297,RS 8316
+Street 750,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Street-750.png,RS 178,RS 3085
+TNT 600i,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600i.png,RS 288,RS 8064
+Thunderbird - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---500.png,RS 69,RS 1183
+Ninja ER-6n,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-ER-6n.png,RS 288,RS 8064
+Dominar,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Dominar.png,RS 106,RS 2380
+
+Bangalore FromDate= 14 - ToDate= 15 Time Duration: 20 TimeOut 17
+Classic - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Classic---350.png,RS 55,RS 1115
+Himalayan,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Himalayan.png,RS 91,RS 1849
+Iron 883,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Iron-883.png,RS 229,RS 7328
+Monster 821,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Monster-821.png,RS 451,RS 12660
+TNT 600 GT,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600-GT.png,RS 288,RS 5875
+Mojo,//wickedride.com/img/bikes_upload/thumbnail/Mahindra-Mojo.png,RS 69,RS 1387
+Desert Storm - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Desert-Storm---500.png,RS 69,RS 1387
+Bullet 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-350.png,RS 55,RS 1115
+Thunderbird - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---350.png,RS 55,RS 1115
+Bullet Electra - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-Electra---350.png,RS 55,RS 1115
+Avenger,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Avenger.png,RS 44,RS 897
+TNT 300,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-300.png,RS 138,RS 2801
+Z 250,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Z-250.png,RS 108,RS 2203
+Duke 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-390.png,RS 83,RS 1686
+Duke 200,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-200.png,RS 67,RS 1360
+RC 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-RC-390.png,RS 106,RS 2148
+Tiger 800 XR,//wickedride.com/img/bikes_upload/thumbnail/Triumph-Tiger-800-XR.png,RS 343,RS 10976
+Scrambler,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Scrambler.png,RS 316,RS 6446
+Versys 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Versys-650.png,RS 310,RS 9920
+Ninja 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-650.png,RS 229,RS 4651
+Hyperstrada,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Hyperstrada.png,RS 495,RS 10968
+Forty Eight,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Forty-Eight.png,RS 297,RS 9504
+Street 750,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Street-750.png,RS 178,RS 3617
+TNT 600i,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600i.png,RS 288,RS 9216
+Thunderbird - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---500.png,RS 69,RS 1387
+Ninja ER-6n,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-ER-6n.png,RS 288,RS 9216
+Dominar,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Dominar.png,RS 106,RS 2720
+
+Bangalore FromDate= 14 - ToDate= 15 Time Duration: 24 TimeOut 9
+Classic - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Classic---350.png,RS 55,RS 1574
+Himalayan,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Himalayan.png,RS 91,RS 2610
+Iron 883,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Iron-883.png,RS 229,RS 10992
+Monster 821,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Monster-821.png,RS 451,RS 19000
+TNT 600 GT,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600-GT.png,RS 288,RS 8294
+Mojo,//wickedride.com/img/bikes_upload/thumbnail/Mahindra-Mojo.png,RS 69,RS 1958
+Desert Storm - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Desert-Storm---500.png,RS 69,RS 1958
+Bullet 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-350.png,RS 55,RS 1574
+Thunderbird - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---350.png,RS 55,RS 1574
+Bullet Electra - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-Electra---350.png,RS 55,RS 1574
+Avenger,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Avenger.png,RS 44,RS 1266
+TNT 300,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-300.png,RS 138,RS 3954
+Z 250,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Z-250.png,RS 108,RS 3110
+Duke 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-390.png,RS 83,RS 2380
+Duke 200,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-200.png,RS 67,RS 1920
+RC 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-RC-390.png,RS 106,RS 3032
+Tiger 800 XR,//wickedride.com/img/bikes_upload/thumbnail/Triumph-Tiger-800-XR.png,RS 343,RS 16464
+Scrambler,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Scrambler.png,RS 316,RS 9100
+Versys 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Versys-650.png,RS 310,RS 14880
+Ninja 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-650.png,RS 229,RS 6566
+Hyperstrada,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Hyperstrada.png,RS 495,RS 16000
+Forty Eight,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Forty-Eight.png,RS 297,RS 14256
+Street 750,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Street-750.png,RS 178,RS 5106
+TNT 600i,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600i.png,RS 288,RS 13824
+Thunderbird - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---500.png,RS 69,RS 1958
+Ninja ER-6n,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-ER-6n.png,RS 288,RS 13824
+Dominar,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Dominar.png,RS 106,RS 4080
+
+Bangalore FromDate= 14 - ToDate= 15 Time Duration: 4 TimeOut 4
+Himalayan,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Himalayan.png,RS 91,RS 1577
+Versys 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Versys-650.png,RS 310,RS 8680
+TNT 600 GT,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600-GT.png,RS 288,RS 5011
+Mojo,//wickedride.com/img/bikes_upload/thumbnail/Mahindra-Mojo.png,RS 69,RS 1183
+Desert Storm - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Desert-Storm---500.png,RS 69,RS 1183
+Bullet 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-350.png,RS 55,RS 951
+Thunderbird - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---350.png,RS 55,RS 951
+Bullet Electra - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Bullet-Electra---350.png,RS 55,RS 951
+Avenger,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Avenger.png,RS 44,RS 765
+Duke 200,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-200.png,RS 67,RS 1160
+Classic - 350,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Classic---350.png,RS 55,RS 951
+Iron 883,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Iron-883.png,RS 229,RS 6412
+Tiger 800 XR,//wickedride.com/img/bikes_upload/thumbnail/Triumph-Tiger-800-XR.png,RS 343,RS 9604
+Scrambler,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Scrambler.png,RS 316,RS 5498
+Ninja 650,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-650.png,RS 229,RS 3967
+Monster 821,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Monster-821.png,RS 451,RS 11080
+Hyperstrada,//wickedride.com/img/bikes_upload/thumbnail/Ducati-Hyperstrada.png,RS 495,RS 9484
+Forty Eight,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Forty-Eight.png,RS 297,RS 8316
+Street 750,//wickedride.com/img/bikes_upload/thumbnail/Harley-Davidson-Street-750.png,RS 178,RS 3085
+TNT 600i,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-600i.png,RS 288,RS 8064
+Thunderbird - 500,//wickedride.com/img/bikes_upload/thumbnail/Royal-Enfield-Thunderbird---500.png,RS 69,RS 1183
+Ninja ER-6n,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Ninja-ER-6n.png,RS 288,RS 8064
+TNT 300,//wickedride.com/img/bikes_upload/thumbnail/Benelli-TNT-300.png,RS 138,RS 2389
+Z 250,//wickedride.com/img/bikes_upload/thumbnail/Kawasaki-Z-250.png,RS 108,RS 1879
+Dominar,//wickedride.com/img/bikes_upload/thumbnail/Bajaj-Dominar.png,RS 106,RS 2380
+Duke 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-Duke-390.png,RS 83,RS 1438
+RC 390,//wickedride.com/img/bikes_upload/thumbnail/KTM-RC-390.png,RS 106,RS 1832

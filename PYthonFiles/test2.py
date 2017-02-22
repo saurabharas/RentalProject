@@ -87,8 +87,14 @@ while(True):
             time.sleep(1)
             xpath="html/body/div[8]/div[1]/div[2]/table/tbody/tr[2]/td[6]/div"
 '''
-print(datetime.now().strftime("%A"))
+print(datetime.now().isoweekday())
+print(int(datetime.now().strftime('%H')) in range(1,17))
+print(datetime.now().strftime('%H'))
+print(int(datetime.now().strftime('%H')) not in range(1,17))
 
+if(datetime.now().isoweekday() and int(datetime.now().strftime('%H')) in range(1,17)):
+    print("good")
+                
 
 
 

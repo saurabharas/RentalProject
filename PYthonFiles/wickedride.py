@@ -106,16 +106,16 @@ def datePickerXpath():
 def dayDuration():
         dateVal=0
         dayCount=0
-        if(datetime.now().isoweekday() and int(datetime.now().strftime('%H'))==range(1,17)):
+        if(datetime.now().isoweekday() and int(datetime.now().strftime('%H')) in range(1,17)):
                 dateVal=0
                 dayCount=0
-        elif(datetime.now().isoweekday() and int(datetime.now().strftime('%H'))!=range(1,17)):
+        elif(datetime.now().isoweekday() and int(datetime.now().strftime('%H')) not in range(1,17)):
                 dateVal=1
                 dayCount=0
-        elif(not datetime.now().isoweekday() and int(datetime.now().strftime('%H'))==range(1,11)):
+        elif(not datetime.now().isoweekday() and int(datetime.now().strftime('%H')) in range(1,11)):
                 dateVal=0
                 dayCount=1
-        elif(not datetime.now().isoweekday() and int(datetime.now().strftime('%H'))!=range(1,11)):
+        elif(not datetime.now().isoweekday() and int(datetime.now().strftime('%H')) not in range(1,11)):
                 dateVal=1
                 dayCount=1
         return dateVal,dayCount        
@@ -125,12 +125,14 @@ class varStatic:
         timeIn=0
         daysCount=0
         timeOut=0
-
-def ajaxContainer(url,city,count):
+        count=0
+        timeElapsed=0
+def ajaxContainer(url,cityId,cityIdNo,city,count):
     browser1.get(url)
-    #findValues(browser1)
-    
+    #findValues(browser1)    
     dateVal,dayCount=dayDuration()
+    print(dateVal,dayCount)
+    
     if(int(datetime.now().strftime('%H'))<6 or int(datetime.now().strftime('%H'))>16):
         varStatic.timeIn=9
         if(varStatic.timeOut==0):
@@ -150,141 +152,68 @@ def ajaxContainer(url,city,count):
                 varStatic.timeOut=varStatic.timeIn
             print("4")
     elif(int(datetime.now().strftime('%H'))>16):
-        varStatic.startVal=int(datetime.now().strftime('%d'))+1    
-        varStatic.endVal=startVal+1
+        varStatic.startVal=int(datetime.now().strftime('%d'))+1
+        varStatic.endVal=varStatic.startVal+1
         varStatic.timeIn=9
         if(varStatic.timeOut==0):
-            varStatic.timeOut=varStatic.timeIn
+            varStatic.timeOut=varStatic.timeIn+4
         print("5")
-    if(varStatic.daysCount<6):
+
+
+    
+            
+        
+    while(varStatic.daysCount<2):
+
+        if(varStatic.count==0):    
+            findValues(browser1,city,str(varStatic.startVal),str(varStatic.endVal),str(varStatic.timeElapsed),varStatic.count,varStatic.timeOut)
+            varStatic.count=varStatic.count+1    
+        else:
+            findValues(browser1,city,str(varStatic.startVal),str(varStatic.endVal),str(varStatic.timeElapsed),varStatic.count,varStatic.timeOut)
+
+
         varStatic.timeOut=varStatic.timeOut+4
+        varStatic.timeElapsed=varStatic.timeElapsed+4
         print("6")
         if(varStatic.timeOut>17):
             varStatic.daysCount=varStatic.daysCount+1
             varStatic.timeOut=9    
             varStatic.endVal=varStatic.endVal+1
-        print(varStatic.startVal,varStatic.timeIn,varStatic.endVal,varStatic.timeOut)
-        ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date="+str(varStatic.startVal)+"+Feb+2017&start_time="+str(varStatic.timeIn)+"%3A00&end_date="+str(varStatic.endVal)+"+Feb+2017&end_time="+str(varStatic.timeOut)+"%3A00&city_id=1&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","Bangalore",0)
+        print(varStatic.startVal,varStatic.timeIn,varStatic.endVal,varStatic.timeOut,varStatic.timeElapsed)
+        ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date="+str(varStatic.startVal)+"+Feb+2017&start_time="+str(varStatic.timeIn)+"%3A00&end_date="+str(varStatic.endVal)+"+Feb+2017&end_time="+str(varStatic.timeOut)+"%3A00&city_id="+cityIdNo+"&_token="+cityId,cityId,cityIdNo,city,0)
         print("7")
-            
-
-
-                    
-                
-
-
-        
-        '''
-        browser1.click("css=span.edit-button")
-        browser1.click("//tr[3]/td[3]/div")
-        browser1.click("//div[4]/div[2]/div/div/div[2]")
-        browser1.click("//div[5]/div/div[2]/table/tbody/tr[3]/td[5]")
-        browser1.click("//div[6]/div[2]/div/div/div[2]")
-        
-        
-        browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[4]/span").click()
-        
-        #browser1.find_element_by_xpath("//tr[3]/td[3]/div").click()
-        time.sleep(5)
-        
-        browser1.find_element_by_xpath("html/body/div[3]/div[1]/div[2]/table/tbody/tr[3]/td[6]/div").click()
-        time.sleep(5)
-      
-        browser1.find_element_by_xpath("html/body/div[4]/div[2]/div/div[1]/div[4]").click()
-        time.sleep(5)
-        browser1.find_element_by_xpath("html/body/div[5]/div[1]/div[2]/table/tbody/tr[4]/td[1]/div").click()
-        time.sleep(5)
-        browser1.find_element_by_xpath("html/body/div[6]/div[2]/div/div[1]/div[3]").click()
-
-        #browser1.find_element_by_xpath("//div[5]/div/div[2]/table/tbody/tr[3]/td[5]").click()
-        #browser1.find_element_by_xpath("//div[6]/div[2]/div/div/div[2]").click()
-        
-        #ActionChains(browser1).move_to_element(browser1.find_element_by_xpath(".//*[@id='_pick_time']/option[7]")).click().perform()
-        #browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[4]/span").click()
-        
-        #ActionChains(browser1).move_to_element(browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[1]/div[1]/input")).click().perform()
-        #time.sleep(3)
-        #ActionChains(browser1).move_to_element(browser1.find_element_by_xpath("html/body/div[8]/div[1]/div[2]/table/tbody/tr[2]/td[7]/div")).click().perform()
-        #browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[1]/div[2]/input").click()
-        
-        
-        #browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[1]/div[2]/input").click()
-        #browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[1]/div[2]/input").click()
-        
-        
-        #ActionChains(browser1).move_to_element(browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[3]/div[1]/input")).click().perform()
-        #time.sleep(3)
-        #ActionChains(browser1).move_to_element(browser1.find_element_by_xpath("html/body/div[8]/div[1]/div[2]/table/tbody/tr[2]/td[7]/div")).click().perform()
-        #browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[1]/div[2]/input").click()     
-        #browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[1]/div[1]/input").click()
-        #a=[]
-        #a.append(browser1.find_elements_by_xpath("html/body/div[3]/div[1]/div[2]/table/tbody/tr[1]"))
-        #print(a)
-        #browser1.find_element_by_xpath(".//*[@id='show-bikes']/form[1]/ul/li[2]/div[1]/div/div[1]/div[2]/input").click()
-        #browser1.find_element_by_xpath("html/body/div[4]/div[2]/div/div[1]/div[4]").click()
-        '''
-        
-'''
-        presentDayVal=6
-        presentWeekVal=3
-        for x in range(1,8):
-            presentDayVal=x
-            x=x+1
-            if(x==7):
-                presentWeekVal=presentWeekVal+1
-            if(x==7 and presentWeekVal):
-                presentWeekVal=1
-            #print(x,presentWeekVal)
-                
-'''         
-
-
-        
-        
-        #inputElement.send_keys(dateCalculation(N))
-
-        #select=Select(browser1.find_element_by_id("_pick_time"))
-        #select.select_by_visible_text(timeCalculation())
-        #ActionChains(browser1).move_to_element(browser1.find_element_by_xpath(".//*[@id='_pick_time']/option[7]")).click().perform()
-        
-'''		
-
-        
-        inputElement2.clear()
-        inputElement2.send_keys(dateCalculation(N+1))
-
-        #use for select options
-        select=Select(browser1.find_element_by_id("_drop_time"))
-        select.select_by_visible_text(timeCalculation())
-        
-'''
-
-        #ActionChains(browser1).move_to_element(browser1.find_element_by_xpath(".//*[@id='_drop_time']")).click().perform()
-        #ActionChains(browser1).move_to_element(browser1.find_element_by_xpath(".//*[@id='_drop_time']/option[2]")).click().perform()
-        
-
-        #browser1.find_element_by_xpath(".//*[@id='_drop_time']").click()
-        #browser1.find_element_by_xpath(".//*[@id='_drop_time']/option[12]").click()
-        
-        #Use when element is not clickable
-'''
-        ActionChains(browser1).move_to_element(browser1.find_element_by_xpath(".//*[@id='datesbtn']")).click().perform()
-        
-        if(count==0):
-            findValues(browser1,city,count,dateCalculation(N),dateCalculation(N+1))
-            count=count+1
-        else:
-            findValues(browser1,city,count,dateCalculation(N),dateCalculation(N+1))
-'''    
-'''
+    if(varStatic.daysCount==2):
+        print("8")
+        varStatic.startVal=int(datetime.now().strftime('%d'))
+        varStatic.endVal=varStatic.startVal+1
+        varStatic.timeIn=0
+        varStatic.daysCount=0
+        varStatic.timeOut=0
+        varStatic.timeElapsed=0
+        print("9")
+    	
 	
-	
-def findValues(browser1):
+def findValues(browser1,city,fromDate,toDate,priceForTimeDuration,count,timeOut):
     ps=browser1.page_source
     soup=BeautifulSoup(ps,"html.parser")
     bikeTitleUL=soup.find_all("ul",{"class":"book_bike_fleet happy_customers item"})
     bikeTitleList=[]
     bikeImgSrcList=[]
+
+
+
+    if(count==0):
+        f=open("wickedRide.txt","w")
+        print("count =%d"%count)
+        f.write("\n")
+        f.write("%s FromDate= %s - ToDate= %s Time Duration: %s TimeOut %s"%(city,fromDate,toDate,priceForTimeDuration,timeOut))
+        f.write("\n")
+    else:
+        f=open("wickedRide.txt","a")
+        f.write("\n")
+        f.write("%s FromDate= %s - ToDate= %s Time Duration: %s TimeOut %s"%(city,fromDate,toDate,priceForTimeDuration,timeOut))
+        print("count =%d"%count)
+        f.write("\n")
     for value in bikeTitleUL:
         tempList=[]
         #print(value)
@@ -299,23 +228,15 @@ def findValues(browser1):
         #bikeSoldOut=soup.find_all("div",{"class":"sold-out-wrapper show"})
 
     for x in range(0,len(bikeTitleList)-1):
-        
-        print(bikeTitleList[x],bikeImgSrcList[x],bikeHourPriceList[x].text.encode('utf8'),bikeTotalPriceList[x].text.encode('utf8'))
-        print("\n \n")
-
+        #print(bikeTitleList[x],bikeImgSrcList[x],bikeHourPriceList[x].text.encode('utf8'),bikeTotalPriceList[x].text.encode('utf8'))
+        f.write("%s,%s,%s,%s"%(bikeTitleList[x],bikeImgSrcList[x],bikeHourPriceList[x].text.encode('utf8'),bikeTotalPriceList[x].text.encode('utf8')))
+        f.write("\n")
+    f.close()
     
-        #for value in tempList[0].contents:
-            #print(value)
-            #print("\n \n")
-            #tempList.append(value2)
-        #bikeTitle=tempList[0].text
-        #bikeSrc=tempList[1].contents[0].get("src")
-        #print(bikeTitle,bikeSrc)
-
-    browser1.close()    	
+    #browser1.close()    	
 		
 	
-	
+'''	
 
     bikeImageList=soup.find_all("a",{"class":"media-link"})
     
@@ -350,8 +271,8 @@ def findValues(browser1):
         localLocationList.append(value.contents[3].text)
         #print(priceList)
 		
-'''	
-'''
+	
+
     print(bikeImgSrcList)
     print(bikeTitleContentList)
     print(priceList)
@@ -375,9 +296,9 @@ def findValues(browser1):
     print("\n")
     print(localLocationList)
     print("\n")
-'''
+
     
-'''
+
     ps=browser1.page_source
     soup=BeautifulSoup(ps,"html.parser")
     myContent=soup.find_all("div",{"class":"row search-border"})
@@ -430,17 +351,35 @@ def findValues(browser1):
 '''
 	
 browser1=webdriver.Chrome()
-ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date=13+Feb+2017&start_time=10%3A00&end_date=14+Feb+2017&end_time=12%3A00&city_id=1&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","Bangalore",0)
-#ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date="+str(14)+"+Feb+2017&start_time=10%3A00&end_date="+str(15)+"+Feb+2017&end_time=12%3A00&city_id=1&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","Bangalore",0)
-#ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date=%s+Feb+2017&start_time=10%3A00&end_date=%s+Feb+2017&end_time=12%3A00&city_id=1&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw"%('15','16'),"Bangalore",0)
-#ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date=%s+Feb+2017&start_time=10%3A00&end_date=%s+Feb+2017&end_time=12%3A00&city_id=1&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw"%('17','18'),"Bangalorse",0)
+baseURL="http://www.wickedride.com/booking/choose-models?"
 
-'''
-ajaxContainer("https://www.rentrip.in/rent-bike/Bangalore","Bangalore",1)
-ajaxContainer("https://www.rentrip.in/rent-bike/Indore","Indore",2)
-ajaxContainer("https://www.rentrip.in/rent-bike/Chandigarh","Chandigarh",3)
-ajaxContainer("https://www.rentrip.in/rent-bike/Chennai","Chennai",4)
-ajaxContainer("https://www.rentrip.in/rent-bike/Coimbatore","Coimbatore",5)
-ajaxContainer("https://www.rentrip.in/rent-bike/Jaipur","Jaipur",6)
-ajaxContainer("https://www.rentrip.in/rent-bike/Guwahati","Guwahati",7)
-'''
+ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date=13+Feb+2017&start_time=10%3A00&end_date=14+Feb+2017&end_time=12%3A00&city_id=1&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","1","Bangalore",0)
+ajaxContainer("https://www.wickedride.com/booking/choose-models?start_date=14+Feb+2017&start_time=11%3A00&end_date=15+Feb+2017&end_time=14%3A00&city_id=2&_token=DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","2","Jaipur",1)
+
+ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date=13+Feb+2017&start_time=10%3A00&end_date=14+Feb+2017&end_time=12%3A00&city_id=3&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","bXlNk9zXv1OB2EI9JcHsVeeC7v2PsjILr80qenHi","3","Udaipur",0)
+ajaxContainer("https://www.wickedride.com/booking/choose-models?start_date=14+Feb+2017&start_time=11%3A00&end_date=15+Feb+2017&end_time=14%3A00&city_id=4&_token=DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","bXlNk9zXv1OB2EI9JcHsVeeC7v2PsjILr80qenHi","4","Mysuru",1)
+
+ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date=13+Feb+2017&start_time=10%3A00&end_date=14+Feb+2017&end_time=12%3A00&city_id=5&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","bXlNk9zXv1OB2EI9JcHsVeeC7v2PsjILr80qenHi","5","Bhuj",0)
+ajaxContainer("https://www.wickedride.com/booking/choose-models?start_date=14+Feb+2017&start_time=11%3A00&end_date=15+Feb+2017&end_time=14%3A00&city_id=6&_token=DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","6","Ahemedabad",1)
+
+ajaxContainer("http://www.wickedride.com/booking/choose-models?start_date=13+Feb+2017&start_time=10%3A00&end_date=14+Feb+2017&end_time=12%3A00&city_id=7&_token=b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","b3TzUROqD1ZI6KpvqAcfVgQkmp3ZNnUtPlx1s7cw","7","Hospet",0)
+ajaxContainer("https://www.wickedride.com/booking/choose-models?start_date=14+Feb+2017&start_time=11%3A00&end_date=15+Feb+2017&end_time=14%3A00&city_id=8&_token=DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","8","belgavi",1)
+
+ajaxContainer("https://www.wickedride.com/booking/choose-models?start_date=14+Feb+2017&start_time=11%3A00&end_date=15+Feb+2017&end_time=14%3A00&city_id=8&_token=DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","9","Jaisalmer",1)
+ajaxContainer("https://www.wickedride.com/booking/choose-models?start_date=14+Feb+2017&start_time=11%3A00&end_date=15+Feb+2017&end_time=14%3A00&city_id=8&_token=DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","10","Manipal",1)
+
+ajaxContainer("https://www.wickedride.com/booking/choose-models?start_date=14+Feb+2017&start_time=11%3A00&end_date=15+Feb+2017&end_time=14%3A00&city_id=8&_token=DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","12","Gokarna",1)
+ajaxContainer("https://www.wickedride.com/booking/choose-models?start_date=14+Feb+2017&start_time=11%3A00&end_date=15+Feb+2017&end_time=14%3A00&city_id=8&_token=DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","13","Chikmanglur",1)
+
+
+ajaxContainer("https://www.wickedride.com/booking/choose-models?start_date=14+Feb+2017&start_time=11%3A00&end_date=15+Feb+2017&end_time=14%3A00&city_id=8&_token=DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","DQDgP0qLWtnazTuOrnqmfBJsxhro8tEUtXHCKiBp","14","Tumkur",1)
+
+
+
+
+
+
+
+
+
+
