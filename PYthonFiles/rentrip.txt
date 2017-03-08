@@ -167,7 +167,7 @@ Coimbatore FromDate= 09-02-2017 - ToDate= 10-02-2017
 https://www.rentrip.in/uploads/products/bike/370x220/225064IMG_1463486987.jpg,Pulsar AS200,Rs. 1,250.00/day, Peelamedu
 https://www.rentrip.in/uploads/products/bike/370x220/225064IMG_1466676353.jpg,Thunderbird 350,Rs. 1,500.00/day, Peelamedu
 https://www.rentrip.in/uploads/products/bike/370x220/225064IMG_1466693076.jpg,Thunderbird 500,Rs. 2,000.00/day, Peelamedu
-https://www.rentrip.in/uploads/products/bike/370x220/225064IMG_1466693752.jpg,Classic 350,Rs. 1,500.00/day, Peelamedu
+b   https://www.rentrip.in/uploads/products/bike/370x220/225064IMG_1466693752.jpg,Classic 350,Rs. 1,500.00/day, Peelamedu
 https://www.rentrip.in/uploads/products/bike/370x220/225064IMG_1466694332.jpg,Himalayan,Rs. 2,000.00/day, Peelamedu
 https://www.rentrip.in/uploads/products/bike/370x220/225064IMG_1466754242.jpg,Harley Davidson Street 750,Rs. 5,000.00/day, Peelamedu
 https://www.rentrip.in/uploads/products/bike/370x220/225064IMG_1466754621.jpg,Duke 200,Rs. 1,500.00/day, Peelamedu
