@@ -34,13 +34,17 @@ html = r.mainFrame().toHtml()
 #print(html.encode("utf-8"))
 soup=BeautifulSoup(html,"lxml")
 #print(soup)
-test=soup.find_all("div",{"class","rm_container"})
-test2=soup.find_all("a")
-print(test[0])
+#test=soup.find_all("div",{"class","rm_container"})
+#test2=soup.find_all("a")
+#print(test[0])
 #print(soup.prettify())
 #for i in range(30):
 #  print("\n \n ")
 # print(test[i])
+<<<<<<< HEAD
+print(datetime.now().isoweekday())
+print(int(datetime.now().strftime('%H'))==range(1,17))
+=======
 
 a=u'RS 6912'
 a.encode("UTF-8")
@@ -297,3 +301,4 @@ print(tag)
 
 
 
+>>>>>>> 2ef7119624674e3f1410f9caf08d61a367190008
