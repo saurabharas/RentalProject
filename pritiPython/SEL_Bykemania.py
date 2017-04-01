@@ -15,21 +15,43 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 
-browser1=webdriver.Chrome()
-conn = sqlite3.connect('Database.db')
-cursor = conn.cursor()
-cursor.execute('DROP TABLE IF EXISTS BYKEMANIA;')
-    
-cursor.execute('''CREATE TABLE BYKEMANIA
-       (ID INT NOT NULL,
-        PROVIDER_ID INT NOT NULL,
-        PROVIDER  CHAR(10),
-        LOCATION  CHAR(50),
-        SUBLOCATION  CHAR(50),
-        BIKE_NAME   CHAR(50),
-        AVAILABILITY CHAR (10));''')
-print "Table created successfully"
-def dateNavigation():
+
+def main(dateChange,pickTime,dropTime):
+    browser1=webdriver.Chrome()
+    conn = sqlite3.connect('Database.db')
+    cursor = conn.cursor()
+    cursor.execute('DROP TABLE IF EXISTS BYKEMANIA;')
+        
+    cursor.execute('''CREATE TABLE BYKEMANIA
+           (ID INT NOT NULL,
+            PROVIDER_ID INT NOT NULL,
+            PROVIDER  CHAR(10),
+            LOCATION  CHAR(50),
+            SUBLOCATION  CHAR(50),
+            BIKE_NAME   CHAR(50),
+            AVAILABILITY CHAR (10));''')
+    print "Table created successfully"
+
+    dateNavigation(browser1,dateChange,pickTime,dropTime)
+    cursor.execute('''SELECT * FROM BYKEMANIA''')
+    #print"Select"
+                                                        
+
+
+    for row in cursor:
+        print "ID = ", row[0]
+        print "PROVIDER_ID = ", row[1]
+        print "PROVIDER = ", row[2]
+        print "LOCATION = ", row[3]
+        print "SUBLOCATION = ", row[4]
+        print "BIKE_NAME = ", row[5]
+        print "AVAILABILITY = ", row[6]
+
+        
+
+
+
+def dateNavigation(browser1,dateChange,pickTime,dropTime):
     dateVar=datetime.now()+timedelta(days=1)
     td=0
     tr=0
@@ -55,13 +77,13 @@ def dateNavigation():
 
 
         #print("tr=%d tr2=%d td=%d td2=%d timeVal1=%d timeVal2=%d"%(tr1,tr2,td,td2,timeVal1,timeVal2))        
-        pageNavigation(tr1,tr2,td,td2,timeVal1,timeVal2)
+        pageNavigation(tr1,tr2,td,td2,timeVal1,timeVal2,browser1,dateChange,pickTime,dropTime)
         dateVar=dateVar+timedelta(days=1)
         
         
     
 
-def pageNavigation(tr,tr2,td,td2,timeVal1,timeVal2):
+def pageNavigation(tr,tr2,td,td2,timeVal1,timeVal2,browser1,dateChange,pickTime,dropTime):
 
     array=[1000,1001,1002,1003,1004]
    
@@ -82,11 +104,14 @@ def pageNavigation(tr,tr2,td,td2,timeVal1,timeVal2):
     
 
         clickDateandTime=browser1.find_element_by_xpath("html/body/div[4]/div[1]/div/div[2]/div/form/div[1]/div/input").click()
-        enterDateandTime=browser1.find_element_by_xpath("html/body/div[4]/div[1]/div/div[2]/div/form/div[1]/div/input").send_keys('2017/04/1 15')
-   
-        clickDateandTime=browser1.find_element_by_xpath("html/body/div[4]/div[1]/div/div[2]/div/form/div[2]/div/input").click()
-        enterDateandTime=browser1.find_element_by_xpath("html/body/div[4]/div[1]/div/div[2]/div/form/div[2]/div/input").send_keys('2017/04/2 17')
+        #enterDateandTime=browser1.find_element_by_xpath("html/body/div[4]/div[1]/div/div[2]/div/form/div[1]/div/input").send_keys('2017/04/1 15')
+        enterDateandTime=browser1.find_element_by_xpath("html/body/div[4]/div[1]/div/div[2]/div/form/div[1]/div/input").send_keys(dateChange+' '+pickTime)
 
+        
+        clickDateandTime=browser1.find_element_by_xpath("html/body/div[4]/div[1]/div/div[2]/div/form/div[2]/div/input").click()
+        #enterDateandTime=browser1.find_element_by_xpath("html/body/div[4]/div[1]/div/div[2]/div/form/div[2]/div/input").send_keys('2017/04/2 17')
+        enterDateandTime=browser1.find_element_by_xpath("html/body/div[4]/div[1]/div/div[2]/div/form/div[2]/div/input").send_keys(dateChange+' '+dropTime)
+        
 
 
         searchButton =   browser1.find_element_by_xpath("//*[@value='Go']").click()
@@ -184,20 +209,6 @@ def page_info(Location):
 
 '''
 
-dateNavigation()
-cursor.execute('''SELECT * FROM BYKEMANIA''')
-#print"Select"
-                                                    
-
-
-for row in cursor:
-    print "ID = ", row[0]
-    print "PROVIDER_ID = ", row[1]
-    print "PROVIDER = ", row[2]
-    print "LOCATION = ", row[3]
-    print "SUBLOCATION = ", row[4]
-    print "BIKE_NAME = ", row[5]
-    print "AVAILABILITY = ", row[6]
     
 
 
